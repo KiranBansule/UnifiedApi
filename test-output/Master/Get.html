@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>TestNG:  Get</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Get</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 09 11:09:27 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7799 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Auth.GenerateOtp.postGenOtp()'><b>postGenOtp</b><br>Test class: Auth.GenerateOtp<br>Parameters: 9765628901, TRUE, 200, OTP sent successfully</td>
+<td></td>
+<td>0</td>
+<td>Auth.GenerateOtp@747edf66</td></tr>
+<tr>
+<td title='Master.WidgetStructure.getWidgetStructure()'><b>getWidgetStructure</b><br>Test class: Master.WidgetStructure<br>Parameters: 152, 2, {"status":200,"message":"OK","data":{"widgetId":2,"widgetName":"Company Doc","tabs":[{"tabId":6,"tabName":"CIN","placeholders":[{"placeholderId":7,"placeholderName":"Front Side","docId":156,"fileUrl":"https://s3-ap-south-1.amazonaws.com/dev-s3-crop/dev/entity-docs/cin/94-company-doc-cin-front-side.jpg","required":true},{"placeholderId":8,"placeholderName":"Back Side","docId":157,"fileUrl":"https://s3-ap-south-1.amazonaws.com/dev-s3-crop/dev/entity-docs/cin/94-company-doc-cin-back-side.jpg","required":false}],"required":true},{"tabId":7,"tabName":"GST","placeholders":[{"placeholderId":13,"placeholderName":"First Page","docId":158,"fileUrl":"https://s3-ap-south-1.amazonaws.com/dev-s3-crop/dev/entity-docs/gst/94-company-doc-gst-first-page.jpg","required":true}],"required":true}]}}</td>
+<td></td>
+<td>0</td>
+<td>Master.WidgetStructure@79da8dc5</td></tr>
+<tr>
+<td title='Auth.ValidateOtp.postValOtp()'><b>postValOtp</b><br>Test class: Auth.ValidateOtp<br>Parameters: 9765628901, 455689</td>
+<td></td>
+<td>0</td>
+<td>Auth.ValidateOtp@c333c60</td></tr>
+<tr>
+<td title='Master.WidgetStructure.getWidgetStructure()'><b>getWidgetStructure</b><br>Test class: Master.WidgetStructure<br>Parameters: 152, 5, {"status":200,"message":"OK","data":{"widgetId":5,"widgetName":"Bank Account Doc","tabs":[{"tabId":12,"tabName":"Pass Book","placeholders":[{"placeholderId":12,"placeholderName":"First Page","docId":153,"fileUrl":"https://s3-ap-south-1.amazonaws.com/dev-s3-crop/dev/entity-docs/passbook/31-bank-account-doc-pass-book-first-page.jpg","required":true}],"required":true}]}}</td>
+<td></td>
+<td>0</td>
+<td>Master.WidgetStructure@79da8dc5</td></tr>
+<tr>
+<td title='Auth.GenerateOtp.postGenOtp()'><b>postGenOtp</b><br>Test class: Auth.GenerateOtp<br>Parameters: 98987898789, TRUE, 1002, [mobile:[Invalid Mobile Number]]</td>
+<td></td>
+<td>0</td>
+<td>Auth.GenerateOtp@747edf66</td></tr>
+<tr>
+<td title='Master.WidgetStructure.getWidgetStructure()'><b>getWidgetStructure</b><br>Test class: Master.WidgetStructure<br>Parameters: 152, 1, {"status":200,"message":"OK","data":{"widgetId":1,"widgetName":"Basic KYC Doc","tabs":[{"tabId":1,"tabName":"AADHAR","placeholders":[{"placeholderId":1,"placeholderName":"Front Side","docId":149,"fileUrl":"https://s3-ap-south-1.amazonaws.com/dev-s3-crop/dev/entity-docs/aadhar/60-basic-kyc-doc-aadhar-front-side.jpg","required":true},{"placeholderId":2,"placeholderName":"Back Side","docId":150,"fileUrl":"https://s3-ap-south-1.amazonaws.com/dev-s3-crop/dev/entity-docs/aadhar/60-basic-kyc-doc-aadhar-back-side.jpg","required":true}],"required":true},{"tabId":3,"tabName":"PAN Card","placeholders":[{"placeholderId":3,"placeholderName":"Front Side","docId":151,"fileUrl":"https://s3-ap-south-1.amazonaws.com/dev-s3-crop/dev/entity-docs/pan/60-basic-kyc-doc-pan-card-front-side.jpg","required":true},{"placeholderId":4,"placeholderName":"Back Side","docId":null,"fileUrl":null,"required":false}],"required":true},{"tabId":2,"tabName":"Voter ID","placeholders":[{"placeholderId":5,"placeholderName":"Front Side","docId":null,"fileUrl":null,"required":true},{"placeholderId":6,"placeholderName":"Back Side","docId":null,"fileUrl":null,"required":false}],"required":false},{"tabId":4,"tabName":"Passport","placeholders":[{"placeholderId":10,"placeholderName":"Front Side","docId":null,"fileUrl":null,"required":false}],"required":false}]}}</td>
+<td></td>
+<td>0</td>
+<td>Master.WidgetStructure@79da8dc5</td></tr>
+<tr>
+<td title='Auth.GenerateOtp.postGenOtp()'><b>postGenOtp</b><br>Test class: Auth.GenerateOtp<br>Parameters: 9765628901, FALSE, 1002, [privacyAgreement:[Privacy agreement must be true]]</td>
+<td></td>
+<td>0</td>
+<td>Auth.GenerateOtp@747edf66</td></tr>
+<tr>
+<td title='Master.WidgetStructure.getWidgetStructure()'><b>getWidgetStructure</b><br>Test class: Master.WidgetStructure<br>Parameters: 152, 3, {"status":200,"message":"OK","data":{"widgetId":3,"widgetName":"Land Doc","tabs":[{"tabId":9,"tabName":"Ownership Doc","placeholders":[{"placeholderId":9,"placeholderName":"Page-1","docId":null,"fileUrl":null,"required":true}],"required":true},{"tabId":10,"tabName":"Lease Doc","placeholders":[{"placeholderId":14,"placeholderName":"Page-1","docId":null,"fileUrl":null,"required":false}],"required":true}]}}</td>
+<td></td>
+<td>0</td>
+<td>Master.WidgetStructure@79da8dc5</td></tr>
+<tr>
+<td title='Auth.GenerateOtp.postGenOtp()'><b>postGenOtp</b><br>Test class: Auth.GenerateOtp<br>Parameters: 989878767, TRUE, 1002, [mobile:[Invalid Mobile Number]]</td>
+<td></td>
+<td>2</td>
+<td>Auth.GenerateOtp@747edf66</td></tr>
+<tr>
+<td title='Master.WidgetStructure.getWidgetStructure()'><b>getWidgetStructure</b><br>Test class: Master.WidgetStructure<br>Parameters: 152, 4, {"status":200,"message":"OK","data":{"widgetId":4,"widgetName":"Warehouse Doc","tabs":[{"tabId":11,"tabName":"WH Invoice","placeholders":[{"placeholderId":11,"placeholderName":"First Page","docId":155,"fileUrl":"https://s3-ap-south-1.amazonaws.com/dev-s3-crop/dev/entity-docs/whinvoice/70-warehouse-doc-wh-invoice-first-page.jpg","required":true}],"required":true}]}}</td>
+<td></td>
+<td>0</td>
+<td>Master.WidgetStructure@79da8dc5</td></tr>
+</table><p>
+</body>
+</html>

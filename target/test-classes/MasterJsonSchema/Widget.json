@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "number"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "widgetId": {
+          "type": "number"
+        },
+        "widgetName": {
+          "type": "string"
+        },
+        "tabs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "tabId": {
+                "type": "number"
+              },
+              "tabName": {
+                "type": "string"
+              },
+              "placeholders": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "placeholderId": {
+                      "type": "number"
+                    },
+                    "placeholderName": {
+                      "type": "string"
+                    },
+                    "docId": {},
+                    "fileUrl": {},
+                    "required": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "placeholderId",
+                    "placeholderName",
+                    "docId",
+                    "fileUrl",
+                    "required"
+                  ]
+                }
+              },
+              "required": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "tabId",
+              "tabName",
+              "placeholders",
+              "required"
+            ]
+          }
+        }
+      },
+      "required": [
+        "widgetId",
+        "widgetName",
+        "tabs"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "message",
+    "data"
+  ]
+}

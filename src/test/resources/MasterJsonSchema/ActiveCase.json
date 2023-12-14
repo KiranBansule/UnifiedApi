@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "number"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "caseId": {
+            "type": "number"
+          },
+          "tenderTypeId": {
+            "type": "number"
+          },
+          "tenderType": {
+            "type": "string"
+          },
+          "commodityId": {
+            "type": "number"
+          },
+          "commodityName": {
+            "type": "string"
+          },
+          "varietyId": {
+            "type": "number"
+          },
+          "varietyName": {
+            "type": "string"
+          },
+          "parentVarietyId": {
+            "type": "number"
+          },
+          "parentVarietyName": {
+            "type": "string"
+          },
+          "cropTypeId": {
+            "type": "number"
+          },
+          "cropType": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "caseId",
+          "tenderTypeId",
+          "tenderType",
+          "commodityId",
+          "commodityName",
+          "varietyId",
+          "varietyName",
+          "parentVarietyId",
+          "parentVarietyName",
+          "cropTypeId",
+          "cropType",
+          "status"
+        ]
+      }
+    }
+  },
+  "required": [
+    "status",
+    "message",
+    "data"
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "caseId": {
+          "type": "integer"
+        },
+        "tenderTypeId": {
+          "type": "integer"
+        },
+        "tenderType": {
+          "type": "string"
+        },
+        "cropTypeId": {
+          "type": "integer"
+        },
+        "cropType": {
+          "type": "string"
+        },
+        "farmId": {
+          "type": "integer"
+        },
+        "farmName": {
+          "type": "string"
+        },
+        "farmPin": {
+          "type": "string"
+        },
+        "farmStateId": {
+          "type": "integer"
+        },
+        "farmRegionId": {
+          "type": "integer"
+        },
+        "warehouseId": {
+          "type": ["integer", "null"]
+        },
+        "warehouseName": {
+          "type": ["string", "null"]
+        },
+        "warehousePin": {
+          "type": ["string", "null"]
+        },
+        "warehouseStateId": {
+          "type": ["integer", "null"]
+        },
+        "warehouseRegionId": {
+          "type": ["integer", "null"]
+        },
+        "companyId": {
+          "type": ["integer", "null"]
+        },
+        "companyName": {
+          "type": ["string", "null"]
+        },
+        "companyPin": {
+          "type": ["string", "null"]
+        },
+        "companyStateId": {
+          "type": ["integer", "null"]
+        },
+        "bankAccountId": {
+          "type": "integer"
+        },
+        "bankAccountName": {
+          "type": "string"
+        },
+        "bankName": {
+          "type": "string"
+        },
+        "commodityId": {
+          "type": "integer"
+        },
+        "commodityName": {
+          "type": "string"
+        },
+        "commodityImageUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "varietyId": {
+          "type": "integer"
+        },
+        "varietyName": {
+          "type": "string"
+        },
+        "sowingDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "sowingAreaSqm": {
+          "type": "integer"
+        },
+        "areaUomId": {
+          "type": "integer"
+        },
+        "areaUomName": {
+          "type": ["string", "null"]
+        },
+        "quantityKg": {
+          "type": ["integer", "null"]
+        },
+        "quantityUomId": {
+          "type": ["integer", "null"]
+        },
+        "quantityUomName": {
+          "type": ["string", "null"]
+        },
+        "pricePaisa": {
+          "type": "integer"
+        },
+        "advancePercent": {
+          "type": "number"
+        },
+        "offerValidTill": {
+          "type": "string",
+          "format": "date"
+        },
+        "userId": {
+          "type": "integer"
+        },
+        "isTrader": {
+          "type": "boolean"
+        },
+        "userStatus": {
+          "type": "string"
+        },
+        "farmStatus": {
+          "type": "string"
+        },
+        "warehouseStatus": {
+          "type": ["string", "null"]
+        },
+        "companyStatus": {
+          "type": ["string", "null"]
+        },
+        "bankAccountStatus": {
+          "type": "string"
+        },
+        "isPaid": {
+          "type": ["boolean", "null"]
+        },
+        "status": {
+          "type": "string"
+        },
+        "invitees": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "userId": {
+                "type": "integer"
+              },
+              "userName": {
+                "type": "string"
+              },
+              "companyName": {
+                "type": "string"
+              }
+            },
+            "required": ["userId", "userName", "companyName"]
+          }
+        },
+        "visitSchedule": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      },
+      "required": [
+        "caseId",
+        "tenderTypeId",
+        "tenderType",
+        "cropTypeId",
+        "cropType",
+        "farmId",
+        "farmName",
+        "farmPin",
+        "farmStateId",
+        "farmRegionId",
+        "bankAccountId",
+        "bankAccountName",
+        "bankName",
+        "commodityId",
+        "commodityName",
+        "commodityImageUrl",
+        "varietyId",
+        "varietyName",
+        "sowingDate",
+        "sowingAreaSqm",
+        "areaUomId",
+        "pricePaisa",
+        "advancePercent",
+        "offerValidTill",
+        "userId",
+        "isTrader",
+        "userStatus",
+        "farmStatus",
+        "bankAccountStatus",
+        "status",
+        "invitees",
+        "visitSchedule"
+      ]
+    }
+  },
+  "required": ["status", "message", "data"]
+}

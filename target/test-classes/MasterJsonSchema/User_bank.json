@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "number"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "accountNumber": {
+            "type": "string"
+          },
+          "accountName": {
+            "type": "string"
+          },
+          "branchName": {
+            "type": "string"
+          },
+          "bankName": {
+            "type": "string"
+          },
+          "userBankAccountId": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "accountNumber",
+          "accountName",
+          "branchName",
+          "bankName",
+          "userBankAccountId"
+        ]
+      }
+    }
+  },
+  "required": [
+    "status",
+    "message",
+    "data"
+  ]
+}

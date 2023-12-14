@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "number"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "commodityId": {
+          "type": "number"
+        },
+        "varietyId": {
+          "type": "number"
+        },
+        "parentVarietyId": {
+          "type": "number"
+        },
+        "tenderTypeId": {
+          "type": "number"
+        },
+        "cropTypeId": {
+          "type": "number"
+        },
+        "sowingAreaSqm": {
+          "type": "number"
+        },
+        "areaUomId": {
+          "type": "number"
+        },
+        "quantityKg": {},
+        "quantityUomId": {},
+        "pricePaisa": {
+          "type": "number"
+        },
+        "unitServiceChargePaisa": {
+          "type": "number"
+        },
+        "visitType": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "commodityId",
+        "varietyId",
+        "parentVarietyId",
+        "tenderTypeId",
+        "cropTypeId",
+        "sowingAreaSqm",
+        "areaUomId",
+        "quantityKg",
+        "quantityUomId",
+        "pricePaisa",
+        "unitServiceChargePaisa",
+        "visitType"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "message",
+    "data"
+  ]
+}

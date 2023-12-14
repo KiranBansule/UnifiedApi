@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API">
+	<test thread-count="5" name="UnifiedJavaAPI">
+		<classes>
+	
+		
+			<class name="Auth.ValidateOtp" />
+			<class name="Master.DraftCase" />
+			<class name="Master.CaseDetails" />
+			<class name="Master.UserFarm" />
+			<class name="Master.States" />
+			<class name="Master.Warehouses" />
+			<class name="Master.SearchCommodity" />
+			<class name="Master.SearchVariety" />
+			<class name="Master.UOM" />
+			<class name="Master.Prices" />
+			<class name="Master.UserCompany" />
+			<class name="Master.SearchBuyer" />
+			<class name="Master.UserBankAccount" />
+			<class name="Master.SearchIFSC" />
+			<class name="Master.POM" />
+			<class name="Master.PaymentInfo" />
+			<class name="Master.ActiveCase" />
+			<class name="AddCase.SaveCropType" />
+			<class name="AddCase.SaveExistingFarm" />
+			<class name="AddCase.SaveNewFarm" />
+			<class name="AddCase.SaveWarehouse" />
+			<class name="AddCase.NewWarehouse" />
+			<class name="AddCase.SaveCommodity" />
+			<class name="AddCase.SaveVariety" />
+			<class name="AddCase.SaveSowingDate" />
+			<class name="AddCase.SaveQuantity" />
+			<class name="AddCase.SaveCompany" />
+			<class name="AddCase.SaveInvitation" />
+			<class name="AddCase.SaveBank" />
+			<class name="AddCase.SaveNewBank" />
+			<class name="AddCase.SaveSchedule" />
+			<class name="AddCase.SaveCaseDoc" />
+			<class name="AddCase.SaveGeoPlot" />
+			<class name="AddCase.SaveGeoTag" />
+		</classes>
+	</test> <!--
+	UnifiedJavaAPI -->
+</suite> <!--
+API -->

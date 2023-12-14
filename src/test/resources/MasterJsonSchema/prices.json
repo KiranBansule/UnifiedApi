@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "number"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "object",
+          "properties": {
+            "address": {
+              "type": "string"
+            },
+            "cityName": {},
+            "districtName": {
+              "type": "string"
+            },
+            "stateName": {
+              "type": "string"
+            },
+            "pincode": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "address",
+            "cityName",
+            "districtName",
+            "stateName",
+            "pincode"
+          ]
+        },
+        "price": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "qualityBandName": {
+                "type": "string"
+              },
+              "pricePaisa": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "qualityBandName",
+              "pricePaisa"
+            ]
+          }
+        }
+      },
+      "required": [
+        "name",
+        "address",
+        "price"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "message",
+    "data"
+  ]
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Authnticate">
+		<classes>
+			<class name="Auth.GenerateOtp" />
+			<class name="Auth.ValidateOtp" />
+			<class name="Master.DraftCase" />
+			<class name="Master.States" />
+			<class name="Master.UserFarm" />
+			<class name="Master.Warehouses" />
+			<class name="Master.SearchCommodity" />
+			<class name="Master.SearchVariety" />
+			<class name="Master.Prices" />
+			<class name="Master.UserCompany" />
+		<class name="Master.SearchBuyer" />
+			<class name="Master.UserBank" />
+			<class name="Master.SearchIFSC" />
+				<class name="Master.WidgetStructure" />
+			
+		</classes>
+	</test> <!--
+	Authnticate -->
+</suite> <!--
+Suite -->

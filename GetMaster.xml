@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Master">
+	<test thread-count="5" name="Get">
+		<classes>
+			<class name="Auth.GenerateOtp" />
+			<class name="Auth.ValidateOtp" />
+			<class name="Master.WidgetStructure" />
+
+
+		</classes>
+	</test> <!--
+	Get -->
+</suite> <!--
+Master -->
+		

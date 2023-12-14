@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "code": {
+            "type": ["string", "null"]
+          },
+          "name": {
+            "type": "string"
+          },
+          "cityName": {
+            "type": ["string", "null"]
+          },
+          "districtName": {
+            "type": "string"
+          },
+          "stateName": {
+            "type": "string"
+          },
+          "stateId": {
+            "type": "integer"
+          },
+          "warehousePin": {
+            "type": "string"
+          }
+        },
+        "required": ["id", "code", "name", "districtName", "stateName", "stateId", "warehousePin"]
+      }
+    }
+  },
+  "required": ["status", "message", "data"]
+}
