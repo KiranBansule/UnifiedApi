@@ -4,7 +4,7 @@
 	<test thread-count="5" name="UnifiedJavaAPI">
 		<classes>
 	
-		
+			<class name="Auth.GenerateOtp" />
 			<class name="Auth.ValidateOtp" />
 			<class name="Master.DraftCase" />
 			<class name="Master.CaseDetails" />
